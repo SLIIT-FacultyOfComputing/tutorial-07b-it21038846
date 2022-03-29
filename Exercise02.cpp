@@ -22,7 +22,18 @@ int main() {
    // 6. Call the display method of the Circle Object
    // 7. Delete the Rectangle Object from memory
    // 8. Delete the Circle Object from memory
-  
+
+   Rectangle *rec1;
+   rec1 = new Rectangle(length, width);
+   
+   Circle *cir1;
+   cir1 = new Circle(radius);
+
+   rec1->display();
+   cir1->display();
+
+   delete rec1;
+   delete cir1;
   
    // ============ DO NOT CHANGE THE CODE BELOW ===================
    cout << "End of Program" << endl;
